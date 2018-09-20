@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class="contenedor">
+    <form class="cuestionario" action="index.html" method="post">
+      <h3>Cuestionario de Cine</h3>
+      <fieldset id="datos_personales">
+        <legend>Datos Personales</legend>
+        <label for="nombre">Nombre:</label><br>
+        <input id="nombre" type="text" name="nombre_"><br>
+        <label for="apellido">Apellidos:</label><br>
+        <input id="apellido" type="text" name="apellido_"><br>
+        <label for="dni">DNI:</label><br>
+        <input id="dni" type="text" name="DNI_"><br>
+        <label for="edad">Edad:</label><br>
+        <input id="edad" type="text" name="edad_" size="3" maxlength="3" min="18"><br>
+        <label for="tipo">Sexo:</label><br>
+        <select id="tipo" class="lista" name="sexo">
+          <option value="X" selected="selected">...</option>
+          <option value="Masculino">M</option>
+          <option value="Femenino">F</option>
+        </select>
+      </fieldset>
+      <fieldset id="best_movie">
+        <legend>Mejor Película</legend>
+        <input type="radio" name="best_movie" value="1">&nbsp;Centauros en el Desierto <br>
+        <input type="radio" name="best_movie" value="2">&nbsp;El hombre que mató a Liberty Valance <br>
+        <input type="radio" name="best_movie" value="3">&nbsp;Río rojo <br>
+      </fieldset>
+      <fieldset id="no_view">
+        <legend>Selecciona las películas que hayas visto</legend>
+        <input type="checkbox" name="view_movies" value="4">&nbsp;300 <br>
+        <input type="checkbox" name="view_movies" value="5">&nbsp;El Fantasma de la ópera <br>
+        <input type="checkbox" name="view_movies" value="6">&nbsp;El club de la pelea <br>
+        <input type="checkbox" name="view_movies" value="7">&nbsp;Solo contra si mismo <br>
+        <input type="checkbox" name="view_movies" value="8">&nbsp;Una mente indomable <br>
+      </fieldset>
+      <fieldset id="grupo_arg">
+        <legend>Argumento de tu pelicula favorita</legend>
+        <textarea name="txt-arg" rows="10" cols="50"></textarea>
+      </fieldset>
+      <br>
+      <input type="reset" name="limpiar" value="Limpiar formulario">&nbsp;&nbsp;&nbsp;
+      <input type="submit" name="enviar" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
