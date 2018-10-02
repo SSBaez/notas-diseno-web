@@ -1,0 +1,43 @@
+/* Una pseudoclase es el estado en el que se encuentra
+cierto elemento
+
+Ej.
+Un enlace puede tener el estado de haber sido visitado 
+o estar esperando que se visite 
+
+Los elementos pueden tener estados mas particular mas
+particulares
+
+link
+visited
+hover
+active
+focus
+*/
+a{
+	font-size: 20px;
+}
+a#link1{
+	text-decoration: none;
+}
+a:link {
+	/* style */
+	color: green;
+}
+a:visited {
+	/* style */
+	color: orange;
+}
+p:hover{
+	color: purple;
+	font-size: 20px;
+	font-weight: bolder;
+}
+span:active {
+	color: red;
+}
+input:focus{
+	border-radius: 20px;
+	background: #F355B2;
+}
+

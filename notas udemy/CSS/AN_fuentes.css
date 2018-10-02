@@ -1,0 +1,78 @@
+@font-face{
+	font-family: "celtic";
+	src: url("font/Celtic.ttf");
+}
+@font-face{
+	font-family: "irlandesa";
+	src: url("font/Ring of Kerry.eot");
+	src: local('?'),
+		url("font/Ring of Kerry.woff") format("woff"),
+		url("font/Ring of Kerry.ttf") format("truetype"),
+		url("font/Ring of Kerry.svg") format("svg"),
+		url("font/Ring of Kerry.otf") format("otf");
+}
+p{
+	position: relative;
+	display: block;
+	font-size: 30px;
+}
+p.text{
+	text-align: justify;
+	/*text-transform: uppercase;*/
+	font-variant: small-caps;
+	text-indent: 14px;
+	letter-spacing: -1px;
+	word-spacing: 8px;
+}
+p.irish{
+	font-size: 30px;
+	font-family: "irlandesa";
+	color: purple;
+	top: 0px;
+	position: relative;
+}
+p.celtic{
+	font-size: 50px;
+	font-family: "celtic";
+	color: red;
+}
+p.manuscrita{
+	font-size: 50px;
+	font-family: 'Indie Flower', cursive;
+	color: green;
+	font-weight: 100;
+	text-align: center;
+	text-decoration: underline;
+}
+/*
+Cada fuente tiene sus propias características y
+limitaciones
+
+Los valores font-weight pueden ser 
+100, 200, 300, 400, 500, 600, 700, 800, normal
+
+Las palabras reservadas tiene su equivalencia: 
+Los valores para font-style pueden ser
+	normal
+	italic
+	oblique
+
+Los valores para text-align pueden ser
+	left
+	right
+	center
+	justify
+
+line-height:
+Los valores para text-decoration pueden ser
+	normal
+	none
+	underline
+	overline
+	line-th
+
+Los valores para text-transform pueden ser
+	capitalize
+	uppercase
+	lowercase
+*/

@@ -1,0 +1,21 @@
+div{
+	margin: 10px;
+	border: 1px solid #000000;
+	width: 150px;
+	height: 150px;
+	background: #ffffff;
+}
+#der{
+	float: right;
+	text-decoration: underline;
+}
+#izq{
+	/* poner y quitar simultaneamente para ver el efecto de solapamiento*/
+	float: left;
+}
+#izq2{
+	float: left;
+}
+#her{
+	float: right;
+}

@@ -1,0 +1,96 @@
+/* 
+Los selectores consiste en elegir de todos los elementos
+html que se tengan a cuales darles caracteristicas
+*/
+header h2,
+h3{
+	color: blue;
+}
+/*h3{
+	color: red;
+}  Esta forma es correcta pero no practica */
+p{
+	color: red;
+}
+p#texto3{
+	color: gray;
+}
+/*Las clases sirven para determinar cuando
+varios elementos van a tener/compartir el
+mismo estilo.
+
+En CSS cambiando una clase se puden cambiar
+muchos elementos html*/
+.prueba{
+	color: orange;
+}
+.grande{
+	font-size: 20px;
+}
+.dos{
+	font-size: 30px;
+}
+/*Selector adyacente Ej. p+p, va hacer referenica
+a todos los parrafos que tengan como hermano mayor
+a un parrafo */
+p+p{
+	font-weight: bold;
+}
+/* los parrafos que sean hijos de div */
+div > p {
+	color: purple;
+}
+article ~ article{
+	color: green;
+}
+article[title]{
+	color: blue;
+}
+article[title="importante"]{
+	color: red;
+}
+h2[title ~= "cabecera"]{
+	color: green;
+}
+/*El ~= sirve para cuando tienen mas d eun identificador
+en el title */
+article[title ~= "encabezado"]{
+	color: yellow;
+}
+h2[lang |= "es"]{
+	color: grey;
+}
+div{
+	font-size: 50px;
+}
+article p {
+	font-size: 20px;
+}
+/*
+Colision de estilos
+
+1.- css del navegador
+2.- css del usuario
+3.- archivos enlazados en el orden añadidos
+4.- propiedades que se heredan
+5.- propiedades propias del elemento
+6.- clases asignadas, y en el mismo orden de asignacion
+7.- identificador
+8.- important
+*/
+/*Puede llevar despues del color !important;
+
+color: green !important;
+
+y establecera el color a la de a huevo
+
+*/
+.verde{
+	color: green;
+}
+.azul{
+	color: blue;
+}
+#gris{
+	color: gray;
+}

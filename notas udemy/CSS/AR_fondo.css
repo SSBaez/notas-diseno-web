@@ -1,0 +1,45 @@
+div{
+	height: 350px;
+	width: 350px;
+	border: 2px solid red;
+	margin: 50px;
+}
+.unos{
+	background: url("copyright.png"),
+				url("house-martell.jpg");
+	background-repeat: no-repeat, repeat;
+	background-position: right bottom,
+						 center center;
+
+	/*background-repeat: no-repeat;
+	background-repeat: repeat-x;
+	background-repeat: repeat-y;*/
+}
+/*
+figure{
+	background: url("house-martell.jpg");
+}*/
+
+/*
+Para posicionar el fondo de un elemento
+tenemos 3 opciones:
+border-box (desde el borde),
+padding-box (desde la zona del padding) y
+content-box (desde la zona del contenido)
+*/
+.degradados{
+	background: -webkit-linear-gradient(
+		45deg,
+		blue 0%,
+		red 30%,
+		green 80%,
+		yellow 100%);
+}
+.degradadosCirc{
+	background: -webkit-radial-gradient(
+		center,
+		blue 0%,
+		red 30%,
+		green 80%,
+		yellow 100%);
+}

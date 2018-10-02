@@ -1,0 +1,51 @@
+div{
+	font-family: verdana;
+}
+div#contenedor{
+	border: 1px solid #000000;
+	padding: 10px;
+	margin: 25px 25px 0px 25px;
+}
+img{
+	float: left;
+	border: 1px solid #000000;
+	margin: 5px 15px 0px 0px;
+	padding: 5px;
+}
+.titulo{
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#titulo_principal:hover{
+	color: orange;
+}
+div#titulo_principal{
+	font-size: 35px;
+	text-align: center;
+	border-bottom: 1px solid #000000;
+}
+p{
+	text-indent: 40px;
+	text-align: justify;
+}
+div#pie{
+	text-align: right;
+	font-style: italic;
+	color: #646464;
+	margin-right: 25px;
+	font-size: 13px;
+}
+a{
+	color: #4a64ff;
+	font-weight: bold;
+	/* esta propiedad desactiva el subrayado */
+	text-decoration: none;
+}
+a:hover{
+	border-bottom: 1px dotted #4a64ff;
+}
+ul{
+	list-style-type: circle;
+	border: 1px solid red;
+	width: 20%;
+}

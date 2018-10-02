@@ -1,0 +1,18 @@
+body{
+	font-family: helvetica, verdana;
+	font-style: 16px;
+}
+ul#lista_menu{
+	list-style-type: none;
+	border-bottom: 1px solid #ff4967;
+	padding-bottom: 5px;
+}
+ul#lista_menu li{
+	display: inline;
+	background-color: #ff4967;
+	padding: 5px;
+}
+ul#lista_menu li a{
+	text-decoration: none;
+	color: #ffffff;
+}

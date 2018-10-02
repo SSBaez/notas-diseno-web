@@ -1,0 +1,36 @@
+body{
+	color:green;
+	font-size: 12px;
+	padding: 2px;
+}
+p{
+	font-style: italic;
+}
+div p a{
+	color: red;
+}
+/* Selector de Clase */
+.prueba{
+	color:purple;
+	font-style: normal;
+	font-size: 20px;
+}
+/* El estilo solo se aplicará a los elementos p de la clase doomy
+   solamente */
+p.doomy{
+	color: orange;
+	font-size: 28px;
+}
+#titulo{
+	font-size: 40px;
+	color: gray;
+}
+/* Tambien se puede usar así, pero solo tiene sentido si la regla
+   se aplica a varios documentos HTML */
+h1 #titulo{
+
+}
+h3 a{
+	font-size: 20px;
+	color: green;
+}

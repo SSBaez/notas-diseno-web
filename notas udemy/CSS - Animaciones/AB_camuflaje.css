@@ -1,0 +1,16 @@
+/*
+camuflaje x color 
+camuflaje x tamaño
+camuflaje x transparencia
+*/
+div{
+	width: 80%;
+	height: 150px;
+	background: olive;
+	margin: 10%;
+}
+p{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bolder;
+}

@@ -1,0 +1,48 @@
+/*
+Los tres atributos fundamentales para
+establecer el borde a un elemento son:
+
+	border-width: indica la anchura del borde
+	border-style: indica el tipo del borde
+		(solid, dashed, double, dotted, inset,
+		outset o none)
+	border-color: indica el color del borde
+
+Estos atributos pueden resumirse en una sola línea
+con la estructura
+border: anchura estilo color
+
+Así mismo se puede aplicar un borde concreto con
+border-top-style o bien
+border-left-color, etc
+
+
+border-radius: 20px;
+border-top-left-radius: 30px 10px
+
+Se puede establecer el radio de curvatura
+de las esquinas de forma igualada, pero tambien
+se pueden hacer curvaturas avanzadas especificando
+en que esquina se aplicaran y cual sera el radio en
+el eje X y en el eje Y para aplicar el radio de la
+esquina
+*/
+div{
+	height: 200px;
+	width: 100px;
+	background: orange;
+	margin: 50px;
+	/*
+	border-color: red;
+	border-style: solid;
+	border-width: 5px;*/
+
+	border: 10px dotted red;
+	border-top-style: outset;
+	border-bottom-style: outset;	
+	border-left-style: double;
+
+	border-radius: 20px;
+	border-top-right-radius: 50px;
+	/*border-top-right-radius: 50px 80px;*/
+}

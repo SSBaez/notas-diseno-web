@@ -1,0 +1,109 @@
+/* Define el tipo de letra y tamaño para todo el doc HTML */
+body{
+	font-family: helvetica, verdana;
+	font-size: 18px;
+	background-color: #212127;
+}
+/* Regla aplicable en un principio a todos los elementos <fieldset> de manera general,
+   define un BORDE EXTERIOR en forma de PUNTOS y un MARGEN INFERIOR de 10PX para no
+   mostrarse excesivamente cerca de los elementos del formulario que engloba*/
+fieldset{
+	/*border: 1px dotted #000000;*/
+	border: 1px dotted #CCCCCC;
+	margin-bottom: 10px;
+}
+/* Hereda las propiedades de la regla anterior y crea las siguientes propiedades:
+   aumenta el margen superior y la hanchura */
+fieldset#grupo_fechas{
+	margin-top: 10px;
+	width: 390px;
+}
+/* se establece que todos los elementos se comporten como bloques y no como elementos
+   in line, por lo que siempre se mostrara una nueva linea justo por encima del campo
+   del formulario, y se cambia el color de la letra*/
+label{
+	display: block;
+	/*color: #696a6a;*/
+	color: #FFFFFF; /* color de letras */
+	font-weight: bold;
+}
+/* atributos generales para la etiqueta legend*/
+legend{
+	color: #267fff; /* azul */
+	font-size: 25px;
+	font-weight: bold;
+}
+/* hereda las propiedades generales sin embargo las modifica para esta secc en espcifico
+   quedandose solo con bold */
+legend#legend_fechas{
+	font-size: 20px;
+	color: #696a6a; /* gris */
+}
+/* modificiacion para controles de formulario, se definen propiedades comunes, aunque mas
+   adelante se especifiquen estilos mas especificos para c/tipo de control*/
+input, select, textarea{
+	border: 1px solid #000000; /* El borde de las cajitas en negro */
+	font-size: 18px;
+	width: 200px;
+	margin-bottom: 7px;
+	padding: 5px;
+	text-align: center;
+	/*background-color: #fffad4;*/
+	border-radius: 20px;
+	background-color: gray; /* color interno de las cajas */
+}
+/* Este atributo cambia de color la caja cuando esta enfocada/parpadeando el cursor */
+input:focus, textarea:focus{
+	background-color: #FFFFFF;
+}
+/* Aumenta el tamaño del cuadro de texto del apellido */
+input#apellido{
+	width: 400px;
+}
+/* el ancho del cuadro de texto se hace pequeño */
+input#edad{
+	width: 50px;
+}
+/* Se retoca el boton enviar dando un leve efecto 3D, la ubicación del botón se
+   establecerá en la capa div correspondiente*/
+input#boton_enviar{
+	background-color: #267fff;
+	color: #ffffff;
+	font-weight: bold;
+	border-left: 0px;
+	border-top: 0px;
+	border-bottom: 2px solid #CCCCCC;
+	border-right: 2px solid #CCCCCC;
+}
+/* regla específica para las listas desplegables del formulario. Sobrescribe las
+   siguientes propiedades definidas en la anterior regla (input, select, textarea) 
+   modifica el tamaño de las cajas disminuyendo el padding, la alineación sobre la
+   misma linea del area de fecha de anc se hace en su regla mas concreta */
+select{
+	width: 70px;
+	padding: 0px;
+	text-align: left;
+}
+/* se hace mas pequeña la caja de sexo */
+select#sexo{
+	width: 60px;
+}
+/* sobrescribe las propiedades de la anterior regla */
+textarea{
+	width: 500px;
+	height: 150px;
+	text-align: justify;
+}
+/* regla para las capas que encierran las listas desplegables de la fecha de nac, se
+   define una posición flotante a la izquierda para que todos los campos se ubiquen 
+   perfectamente ubicados*/
+div.fecha{
+	/* pone todos los cuadros de fecha en linea */ 
+	float: left;
+	margin: 5px;
+}
+/* coloca el boton enviar hasta la extrema derecha badum tss! */
+div#capa_enviar{
+	float: right;
+	margin: 5px;
+}

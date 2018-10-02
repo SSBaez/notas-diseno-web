@@ -1,0 +1,70 @@
+p{
+	border: 2px solid black;
+	background: orange;
+	display: block;
+	/*display: inline-block;*/
+	/*display: inline; */
+}
+p#ghostt{
+	display: none;
+}
+.padre{
+	width: 250px;
+	height: 800px;
+	background: orange;
+	margin: 25px;
+	overflow: hidden;
+}
+/*
+Z-INDEX es un simil a las capaz en photoshop, indica
+la profundidad que tiene un elemento respecto a otro
+de cara al usuario.
+
+Se puede hacer que un elemento se ponga al frente o q
+otro lo haga mucho mas y vaya ganando visibilidad x q
+se puede elegr el orden que estaran en el eje z.
+
+El z index siempre tiene que especificarse con un 
+position si no, no funciona
+
+Con OVERFLOW: HIDDEN se puede eliminar todo lo q se 
+salga del elemento al q se le haya asignado
+
+El VISIBILITY permite poder ocultar un elemento pero 
+sin que eso cambie el flujo de posicionamiento del resto
+}*/
+.hijo2{
+	width: 100px;
+	height: 100px;
+	background: lime;
+	position: absolute;
+}
+.hijo1{
+	width: 50px;
+	height: 50px;
+	background: red;
+	display: inline-block;
+	position: relative;
+	z-index: 99;
+}
+.hijo3{
+	width: 50px;
+	height: 50px;
+	background: blue;
+	position: relative;
+	left: -20px;
+}
+.oculto{
+	visibility: hidden;
+	/*display: none;*/
+	/* display: none; es distinto a visibility: hidden;
+	por que en display none el elemento que sigue ocupa
+	el lugar en donde se aplico display, mientras que en
+	visibility no ocurre esto, este mantiene su lugar
+	solo que no es visible
+	 */
+}
+.transparencia{
+	opacity: 0.5;
+	background: black;
+}

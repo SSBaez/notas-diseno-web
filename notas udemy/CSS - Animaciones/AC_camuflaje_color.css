@@ -1,0 +1,77 @@
+div{
+	font-family: 'Arial';
+	background: #a8cf45;
+	width: 150px;
+	margin: 10px 10px;
+    /*El primero es arriba/abajo y el sig 
+    los lados*/
+	padding: 15px 30px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.tringuloLateral{
+	-webkit-transform: translateX(0);
+}
+.trianguloLateral:before{
+	content: '';
+	-webkit-transition-duration: 0.5s;
+
+	/*El padre debe estar en relative*/
+	position: absolute;
+	left: 0px;
+	top: 50%;
+
+	/* Sirve para centrar el triangulo 
+	verticalmente*/
+	margin-top: -20px;
+
+	border-style: solid;
+	border-width: 20px 20px 20px 0px;
+	border-color: transparent;
+	/*
+	border-color: blue
+				  red
+				  black
+				  orange;
+	*/
+	border-color: transparent
+				  #a8cf45
+				  transparent
+				  transparent;
+}
+.trianguloLateral:hover:before{
+	left: -18px
+}
+.trianguloLateral_v2{
+	-webkit-transition-duration: 0.5s;
+	-webkit-transform: translateX(0);
+}
+.trianguloLateral_v2:before{
+	content: '';
+	-webkit-transition-duration: 0.5s;
+	
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	
+	/* Sirve para centrar el triangulo 
+	horizontalment*/
+	margin-left: -20px;
+
+	border-style: solid;
+	border-width: 0px 20px 20px 20px;
+	border-color: transparent
+				  transparent
+				  #a8cf45
+				  transparent;
+}
+.trianguloLateral_v2:hover:before{
+	top: -18px
+}
+.trianguloLateral_v2:hover{
+	-webkit-transform: translateY(15px);
+}

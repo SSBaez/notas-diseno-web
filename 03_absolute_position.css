@@ -1,0 +1,25 @@
+div{
+	font-size: 25px;
+	border: 2px solid #000000;
+	margin: 10px;
+	height: 150px;
+	width: 150px;
+}
+#capa2{
+	position: absolute;
+	left: 65px;
+}
+div.conte{
+	/* Si no se tuviera esta prodiedad el desplazamiento de la capa-2 tomaria 
+	como referencia la ventana y no su contenedor*/
+	position: relative;
+	margin: 25px;
+	width: 450px;
+	height: 200px;
+}
+#capa2-bis{
+	position: absolute;
+	top: 50px;
+	color: #ffffff;
+	background: #000000;
+}

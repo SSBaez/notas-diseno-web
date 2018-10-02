@@ -1,0 +1,12 @@
+p{
+	position: relative;
+}
+p:before{
+	content: "esto es un pseudo elemento -";
+	top: 50px;
+	/* Para que el top se vea aplicado se debe poner
+	el position relative, hay q tener en cuenta
+	siempre, el elemento padre */
+	position: relative;
+	left: 50px;
+}

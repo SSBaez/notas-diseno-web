@@ -1,0 +1,18 @@
+table{
+	border: 1px solid #000000;
+}
+table#tabla01{
+	border-collapse: collapse;
+}
+table tr td{
+	border: 1px solid #000000;
+}
+table#tabla02{
+	border-spacing: 3px;
+}
+.table_02{
+	color: red;
+}
+table#tabla03{
+	border-spacing: 2px 8px;
+}

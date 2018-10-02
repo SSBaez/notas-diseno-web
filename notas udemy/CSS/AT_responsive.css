@@ -1,0 +1,61 @@
+/*
+Mobile first consiste en diseñar los elementos de la
+pagina para que esten orientados por defecto a
+dispositivos moviles, de pantallas mucho mas peqñas
+en comparacion con la pantalla de una pc
+*/
+body{
+	background: orange;
+}
+div{
+	/*
+	Las características que yo indique, no van a ser
+	las que van a tener cuando la pantalla tenga un
+	tamaño muy grande (PC), sino que las caracteris
+	van a ser las que va a tener un tel movil cuando
+	la panatalla es la minima posible y despues a
+	medida que la pantalla vaya siendo mas grande
+	se ira indicando como va cambiar la pagina, el
+	contenido y cuales son las nvas posiciones que
+	pasan a ocupar c/u de los elementos asi como 
+	se interrelacionan entre si
+
+	Entnces el codigo por efecto debe ser para
+	dispositivos moviles
+	*/
+	width: 80%;
+	height: 150px;
+	border: 2px solid black;
+	margin: 9.5%;
+	display: inline-block;
+	background: white;
+}
+/* TELEFONO EN POSICION HORIZONTAL*/
+@media screen and (min-width: 480px){
+	body{
+		background: #1B4B82;
+	}
+	div{
+		
+	}
+}
+/* TABLET */
+@media screen and (min-width: 767px){
+	body{
+		background: #CA2B2B;
+	}
+	div{
+		width: 40%;
+		margin: 4.5%;
+	}
+}
+/* PANTALLA DE PC o TABLET EN POS HORIZONTAL*/
+@media screen and (min-width: 950px){
+	body{
+		background: #AD44EA;
+	}
+	div{
+		width: 30%;
+		margin: 1.2%;
+	}
+}

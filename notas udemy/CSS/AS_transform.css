@@ -1,0 +1,66 @@
+/*Una transf consiste q a un mismo elemento se le
+hagan cambios en el diseño sin cambiar su codigo
+html, sino solamente la forma en la que se
+visualiza */
+div{
+	height: 200px;
+	width: 200px;
+	background: orange;
+	border: 2px solid black;
+	margin: 50px;
+
+	/* Para que la transition sea gradual al pasar 
+	el raton*/
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+	/*Lo mismo pero en una sola linea
+	transition: all 1s ease-in-out;*/
+
+	/*
+	Propiedades que puede tomar el
+	transition-timing-function
+
+	ease
+	ease-in
+	ease-out
+	ease-in-out
+	linear
+
+	*/
+}
+.primero:hover{
+	transform: rotate(20deg);
+	/*transform-origin: top left;*/
+	transform-origin: 5%, 20%;
+
+}
+.segundo:hover{
+	transform: rotate(90deg) skew(20deg, 5deg);
+	background: yellow;
+}
+.tercero:hover{
+	background: red;
+	transform: translateY(200px);
+}
+.cuarto:hover{
+	transform: scaleX(0.5);
+	background: blue;
+}
+/*
+transform: tipo(cantidad);
+
+esto esta sujeto a variantes:
+transform: tipoX(cantidad);
+transform: tipoY(cantidad);
+transform: tipo(cantidadX, cantidadY);
+
+tranformaciones:
+rotate
+skew //deformar los elementos
+translate //cambiarlos y colocarlos en otro sitio
+scala
+
+Para combinarlos
+transform: tipo(), tipo(), tipo()...;
+*/

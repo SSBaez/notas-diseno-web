@@ -1,0 +1,65 @@
+p{
+	border: 2px solid black;
+	background: orange;
+	display: block;
+	/*display: inline-block;*/
+	/*display: inline; */
+}
+p#ghostt{
+	display: none;
+}
+.padre{
+	width: 250px;
+	height: 800px;
+	background: orange;
+	margin: 25px;
+	position: relative;
+}
+/*Position
+Los position son las caracteristicas css que 
+establecen en que punto de la pagina comenzará a
+posicionarse, mostrarse el elementoh html
+
+Por defecto todos los elementos se crean con la 
+propiedad position y el valor static
+
+Es decir, los elementos comenzaran a mostrarse a
+partir de la esq sup izq del elemento padre
+*/
+
+/* 
+Ahora como el padre esta como relative el top: 0px; va 
+a estar en funcion de este y no del body, por que al
+padre ya se le dio un position
+*/
+
+.padre>div{
+	/*El position absolute anula estas lineas */
+	display: inline-block;
+	vertical-align: top;
+	/* Es distinto poner relative aqui, q arriba
+	position: relative;*/
+}
+
+.hijo1{
+	width: 50px;
+	height: 50px;
+	background: red;
+	/*position: relative;
+	top: -30px;
+	left: 200px;*/
+	/*position: absolute*/
+	position: fixed;
+	left: 0px;
+	/* El position fixed siempre va a colocar sus 
+	coordenadas con respecto al body, el position fixed
+	es un elemento que va a ocupar esa zona de la pag, 
+	siempre ya sea q baje o se suba por la pagina */
+
+	top: 20px;
+}
+.hijo2{
+	width: 100px;
+	height: 100px;
+	background: lime;
+}

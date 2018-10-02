@@ -1,0 +1,43 @@
+div{
+	border: 2px solid black;
+	width: 50%;
+	position: relative;
+	padding: 5px 5px;
+	margin-top: 5%;
+	margin-left: 25%;
+}
+div.pseudoelemento:before{
+	content: 'before';
+	position: absolute;
+	
+	background: red;
+}
+div.pseudoelemento:after{
+	content: 'after';
+}
+/*
+Una pseudoclase es el estado de un
+elemento o el uso que se esta haciendo de
+este. Es decir, pueden hacer referencia a 
+un estado a como se encuentra el elemento
+o al uso que se le esta dando.
+
+No todos los elementos html tienen las
+mismas pseudoclases, hay algunas que son 
+comunes a todos.
+
+Ej. hover
+*/
+div.pseudoclase1:hover{
+	background: orange;
+}
+
+a:hover{
+	color: lime;
+}
+a:focus{
+	color: red;
+}
+a:active{
+	color: yellow;
+}

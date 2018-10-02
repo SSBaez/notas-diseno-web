@@ -1,0 +1,81 @@
+body{
+	background: gray;
+}
+div *{
+	border: 1px solid black;
+	width: 80px;
+	height: 50px;
+	background: snow;
+	display: inline-block;
+}
+/* 
+:nth-child(N)
+----> Es el numero que ocupa como hijo dentro del
+padre el elemento que estamos apuntando
+
+:nth-last-child(N)
+-----> Es como el anterior pero iniciando desde el
+final
+
+elemento:nth-of-type(N)
+-----> Hace referencia al numero del elemento segun
+el tipo que se haya especificado antes de los dos
+puntos
+
+elemento:nth-last-of type(N)
+-----> Es como el anterior pero iniciando desde el
+final
+
+:first-of-type
+-----> Se marca el primero del elemento que se marco
+antes de los dos puntos
+
+:last-of-type
+-----> Se marca el ultimo del elemento que se marco
+antes de los dos puntos
+
+:only-of-type
+-----> Se marca ese tipo si es el unico que existe
+si hay dos ya no existe
+
+:empty
+-----> Se marca si el elemento al que estamos
+haciendo referencia esta completamente vacio no
+tiene nada
+
+:not(S)
+-----> Se marca el elemento que no sea del selector,
+es decir, de la clase que se haya colocado antes de
+entre parentesis
+
+ej.
+div article:not(.clase)
+div *:not(p);
+
+:last-child
+-----> El ultimo hijo
+
+:only-child
+-----> el unico hijo
+
+:root
+-----> El elemento raiz
+
+:eneable
+-----> Los elementos que esten activados
+
+:disable
+-----> Los elementos que esten desactivados
+
+:checked
+-----> Para check box o ready buttons que esten
+activados
+
+Tambien se pueden poner en (N)
+even / odd
+---> pares / impares
+
+*/
+div *:not(p){
+	background: orange;
+}

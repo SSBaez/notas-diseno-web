@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+	<div id="contenedor"></div>
+	<form id="formulario" name="formulario01" action="index.html" method="post">
+		<fieldset id="grupo_datos">
+			<legend id="legend_datos">Datos Personales</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre">
+			<label for="apellido">Apellido:</label>
+			<input type="text" name="apellido" id="apellido">
+			<label for="dni">DNI:</label>
+			<input type="text" name="dni" id="dni">
+			<label for="edad">Edad:</label>
+			<input type="text" name="edad" id="edad" size="2" maxlength="2">
+			<div>
+				<label for="sexo">Sexo:</label>
+				<select name="sexo" id="sexo">
+					<optgroup>
+						<option value="1">H</option>
+						<option value="2">F</option>
+					</optgroup>
+				</select>
+			</div>
+			<fieldset id="grupo_fechas">
+				<legend id="legend_fechas">Fecha de nacimiento</legend>
+				<div class="fecha">
+					<label for="dia">Día</label>
+					<select name="dia" id="dia">
+						<option value="X" selected="selected">...</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+					</select>
+				</div>
+				<div class="fecha">
+					<label for="mes">Mes</label>
+					<select name="mes" id="mes">
+						<option value="X" selected="selected">...</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+					</select>
+				</div>
+				<div class="fecha">
+					<label for="anio">Año</label>
+					<select name="anio" id="anio">
+						<option value="X" selected="selected">...</option>
+						<option value="1970">1970</option>
+						<option value="1971">1971</option>
+					</select>
+				</div>
+			</fieldset>
+		</fieldset>
+		<fieldset id="grupo_sugerencias">
+			<legend>Sugerencias</legend>
+			<textarea name="argumento" id="argumento" cols="50" rows="14"></textarea>
+		</fieldset>
+		<div id="capa_enviar">
+			<input type="submit" value="Enviar Datos" id="boton_enviar" name="boton_enviar">
+		</div>
+	</form>
+</body>
+</html>
